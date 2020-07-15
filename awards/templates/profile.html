@@ -1,0 +1,57 @@
+{% extends 'projects/base.html' %}
+
+{% block content %}
+    {{block.super}}
+<div class="container-fluid bg-light" >
+    <div class="row" style="margin-top: 15ch;">
+        {% if profile.user %}
+        <div class="col-md-4">
+          <a class="btn btn-lg" style="margin-left:30%; font-size: 100%; font-weight: 600" href="">Following</a>
+        </div>
+        <div class="col-md-3">
+          <img src="{{profile.profile_pic.url}}" alt="Image" class="img-responsive profilepic" >
+          <h2 class="userprofile" style="text-align:center;font-weight:bold">{{profile.user}}</h2>
+          <h4 style="text-align:center"> <strong>{{profile.bio}}</strong> </h4>
+         
+          <a class="btn btn-default" style="margin-left:30%; font-weight: 600" href="/edit_profile"><span class="prof">Edit profile</span> </a>
+          <br>
+          <br>
+          <p style="text-align: center; font-weight: 600">{{profile.email}}</p>
+        </div> 
+        <div class="col-md-4">
+    
+          
+        </div>
+        {% else %}
+        </p>No profile description</p>
+
+        {% endif %}
+    </div>
+
+    <div class="container" style="margin-top:120px" >
+
+    <div class="card-body">
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-4" style="padding:1%">
+              <div class="card">
+                <img src="{{project.project_image.url}}" class="img-responsive" alt="" style="width:700px;height:300px;">
+                <br>
+                <hr>
+                <div style="margin:3%">
+                  <p style="float:right">{{project.date}}</p>
+                  <p><strong>{{project.title}}</strong></p>
+                </div>
+                
+              </div>
+            </div>
+            
+
+            {% endfor%}
+            </div>
+    </div>
+          
+      </div>
+</div>
+
+{% endblock %}

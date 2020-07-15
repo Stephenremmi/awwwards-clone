@@ -1,4 +1,7 @@
-{% extends 'base.html'%} {% block content %} {% load static%}
+{% extends 'awards/base.html'%} 
+{% block content %} 
+{% load static%}
+
 <body class="home" data-debug="0">
     <div class="wrapper ">
         <section id="content">
@@ -6,14 +9,15 @@
                 <div class="box-site-head js-single-element" data-model="{&quot;likes&quot;:55,&quot;id&quot;:38186,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/10\/5da42f4e8967d075754281.jpg&quot;},&quot;slug&quot;:&quot;laguta-laguta&quot;,&quot;title&quot;:&quot;Laguta &amp; Laguta&quot;,&quot;createdAt&quot;:1571616000,&quot;tags&quot;:[&quot;Design Agencies&quot;,&quot;Mobile &amp; Apps&quot;,&quot;Web &amp; Interactive&quot;,&quot;Flat Design&quot;,&quot;Minimal&quot;,&quot;Portfolio&quot;,&quot;Responsive Design&quot;,&quot;Black&quot;,&quot;Red&quot;,&quot;White&quot;,&quot;Gallery&quot;,&quot;GSAP Animation&quot;,&quot;UI design&quot;,&quot;Nuxt.js&quot;],&quot;type&quot;:&quot;submission&quot;}">
                     <div class="box-bg has-tablet" style="height:500px;">
                         <a href="/">
-                            <img src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80" data-src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80" alt="Laguta &amp; Laguta"
-                                width="1900" height="200" class="lazy" />
+
+                            <img src="https://images.unsplash.com/photo-1500467525088-aafe28c0a95e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80" data-src="https://images.unsplash.com/photo-1500467525088-aafe28c0a95e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80"
+                                alt="Laguta &amp; Laguta" width="1900" height="200" class="lazy" />
                         </a>
                     </div>
                     <div class="box-photo has-mobile">
                         <a href="/">
-                            <img src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80" data-srcset="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80" alt="Laguta &amp; Laguta"
-                                class="lazy" />
+                            <img src="https://images.unsplash.com/photo-1500467525088-aafe28c0a95e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80" data-srcset="https://images.unsplash.com/photo-1500467525088-aafe28c0a95e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80"
+                                alt="Laguta &amp; Laguta" class="lazy" />
                             <div class="ribbon">
                                 <img width="90" height="151" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAACXAQMAAACvEN4rAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABZJREFUOMtjGAWjYBSMglEwCkbBYAYAB6sAAfz0o9UAAAAASUVORK5CYII=" srcset="https://assets.awwwards.com/assets/images/ribbons/sotd_white_left.png 1x, https://assets.awwwards.com/assets/images/ribbons/sotd_white_left@2x.png 2x"
                                     alt="Site of the Day" />
@@ -25,49 +29,51 @@
                         <div class="inner vertical-center">
                             <div class="box-info">
                                 <div class="row">
-                                    <h2 class="heading-large"><a href="{{image.url}}">Parrot Blue</a></h2>
+                                    <h2 class="heading-large"><a href="{{profile_image.url}}">Tiger Woods</a></h2>
                                 </div>
                                 <div class="row">
                                     <div class="by">
                                         by <strong>
+
                                     <a href="/">Anonymous</a>
-                                </strong> from <strong>Unknown</strong> with <strong>7.53</strong>
+                                </strong> from <strong>Unknown</strong> with <strong>8.9</strong>
                                     </div>
                                 </div>
                                 <div class="box-notesite js-notes">
                                     <li class="circle-note-progress style-design" data-note="">
                                         <div class="circle">
                                             <div class="des">
-                                                <p class="d-block mx-auto textrate">9.09</p>
+                                                <p class="d-block mx-auto textrate" style="color: white;">9.09</p>
                                             </div>
                                         </div>
-                                        <div class="legend">DESIGN</div>
+                                        <div class="legend" style="color: white;">DESIGN</div>
                                     </li>
                                     <li class="circle-note-progress style-usability" data-note="{{rating.usability_average}}">
                                         <div class="circle">
                                             <div class="des1">
-                                                <p class="d-block mx-auto textrate">7.78</p>
+                                                <p class="d-block mx-auto textrate" style="color: white;">5.01</p>
                                             </div>
                                         </div>
-                                        <div class="legend">USABILITY</div>
+                                        <div class="legend" style="color: white;">USABILITY</div>
                                     </li>
                                     <li class="circle-note-progress style-creativity" data-note="{{rating.content_average}}">
                                         <div class="circle">
                                             <div class="des2">
-                                                <p class="d-block mx-auto textrate">5.76</p>
+                                                <p class="d-block mx-auto textrate" style="color: white;">6.76</p>
                                             </div>
                                         </div>
-                                        <div class="legend">CONTENT</div>
+                                        <div class="legend" style="color: white;">CONTENT</div>
                                     </li>
-                                    <li class="circle-note-progress style-content" data-note="5.65">
+                                    <li class="circle-note-progress style-content" data-note="{{rating.creativity_average}}">
                                         <div class="circle">
                                             <div class="des3">
-                                                <p class="d-block mx-auto textrate">12.45</p>
+                                                <p class="d-block mx-auto textrate" style="color: white;">12.45</p>
                                             </div>
                                         </div>
-                                        <div class="legend">SCORE</div>
+                                        <div class="legend" style="color: white;">CREATIVITY</div>
                                     </li>
                                     </ul>
+
                                 </div>
                             </div>
                             <div class="box-breadcrumb">
@@ -80,23 +86,30 @@
                                 <div class="box-right">
                                     <div class="list-share-circles style2 light">
                                     </div>
+
                                 </div>
                             </div>
                             <div class="box-bl">
                                 <a href="/" data-identifier="laguta-laguta" data-type="submission" class="js-visit-item bt-default green-fill" target="_blank" rel="noopener nofollow">Visit
                                 Site</a>
+
                                 <strong class="bt-item bt-default js-collect">Collect</strong>
+
                             </div>
                             <div class="box-br">
+
                                 <div class="box-users-likes">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="block p-0" id="block-sod">
                 </div>
-                <div class="block p-0">
+
+                <div class="block p-0" id="block">
                     <div class="inner">
                         <div class="box-heading">
                             <div class="box-left">
@@ -117,73 +130,79 @@
                                             <a href="/">
                                                 <div class="box-photo">
                                                     {% if image.image %}
-                                                    <img src="{{image.image.url}}" alt="Our Place" width="417" height="298" class="lazy" /> {% endif %}
+                                                    <img src="{{profile_image.image.url}}" alt="Our Place" style="width: 100%; height: 300px;"> {% endif %}
+
                                                 </div>
                                             </a>
-                                            <div class="hover-item top">
-                                                <span class="js-options-collectable"></span>
-                                                <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
-                    <svg class="ico-svg" viewbox="0 0 15 14">
-        <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
-    </svg>
-           {% for rating in ratings%} <span class="number"> {{rating.design}}</span> {%endfor%}
+
+                                            <div class="hover-item top ">
+                                                <span class="js-options-collectable "></span>
+
+                                                <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like "><p style="color: white; "><b><small>Collect</small></b></p><svg class="ico-svg " viewbox="0 0 15 14 "><use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart "></use></svg>
+                                                    <p> {{design}}</p> 
+
                                                 </span>
                                             </div>
-                                            <div class="hover-item bottom">
-                                                <a class="js-visit-item bt-item bt-link" href="{{image.link}}" data-identifier="our-place" data-type="submission" target="_blank" rel="noopener nofollow">
-                                                    <svg class="ico-svg" viewbox="0 0 22.24 14">
-                                                    <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
-                                                </svg>
+
+                                            <div class="hover-item bottom ">
+                                                <a class="js-visit-item bt-item bt-link " href="{{profile_image.link}} " data-identifier="our-place " data-type="submission " target="_blank " rel="noopener nofollow ">
+                                                    <i class="fas fa-share " style="color: white; "></i>
+                                                    <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link "></use>
+                                                    </svg>
                                                 </a>
                                             </div>
-                                            <div class="hover-item center">
-                                                <a href="{% url 'project' image.title %}" class="bt-default white-fill large vote-now">VOTE
+
+                                            <div class="hover-item center ">
+                                                <a href="{% url 'project' profile_image.title %} " class="bt-default white-fill large vote-now ">VOTE
                                                 NOW</a>
                                             </div>
                                         </figure>
-                                        <div class="box-info">
-                                            <div class="content">
-                                                <div class="row">
-                                                    <h3><a href="/">{{image.title}}</a></h3>
+
+                                        <div class="box-info ">
+                                            <div class="content ">
+                                                <div class="row ">
+                                                    <h3><a href="/ ">{{profile_image.title}}</a></h3>
                                                 </div>
-                                                <div class="row row-2col">
-                                                    <div class="box-left">From United States</div>
-                                                    <div class="box-right">
-                                                        {{date|date:"l d-F Y"}}
+                                                <div class="row row-2col ">
+                                                    <div class="box-left ">From United States</div>
+
+                                                    <div class="box-right ">
+                                                        {{date|date:"l d-F Y "}}
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="footer style2">
-                                                <div class="box-left">
-                                                    <div class="box-byuser js-tooltip-user">
-                                                        <div class="item js-user" data-username="thecouch">
-                                                            <a href="">
-                                                            {% if profile.profile_picture %}
-                                                            <img src="{{profile.profile_picture.url}}"
-                                                                 width="27"
-                                                                 height="27" alt="{{image.title}}" class="lazy"/>
+                                            <div class="footer style2 ">
+                                                <div class="box-left ">
+                                                    <div class="box-byuser js-tooltip-user ">
+                                                        <div class="item js-user " data-username="thecouch ">
+                                                            <a href=" ">
+                                                                {% if user.is_authenticated%}
+                                                            <img src="{{user.profile.profile_pic.url}} "
+                                                                 width="27 "
+                                                                 height="27 " alt="{{profile_image.title}} " class="lazy "/>
                                                         
                                                         {% else %}
-                                                        image{{image.user.user_profile.profile_picture.url}}
-                                                        <img src=""
-                                                                 width="27"
-                                                                 height="27" alt="{{image.title}}" class="lazy"/>
+                                                        {{image.profile_picture.url}}
+                                                        <img src=" "
+                                                                 width="27 "
+                                                                 height="27 " alt="{{profile_image.title}} " class="lazy "/>
                                                         {% endif %}
                                                     </a>
                                                         </div>
-                                                        <div class="by">
-                                                            by <strong><a href="{% url 'profile' image.user.username%}"
-                                                                      class="text-black">{{image.user.username}}</a></strong>
+                                                        <div class="by ">
+                                                            by <strong><a href="{% url 'profile' profile_image.user.username%} "
+                                                                      class="text-black ">{{profile_image.user.username}}</a></strong>
                                                         </div>
                                                     </div>
+
                                                 </div>
-                                                <div class="box-right">
-                                                    <ul class="list-tags size-small">
+                                                <div class="box-right ">
+                                                    <ul class="list-tags size-small ">
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>from django.shortcuts import render
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -195,7 +214,3 @@
     </div>
 </body>
 {% endblock%}
-Collapse
-
-
-
