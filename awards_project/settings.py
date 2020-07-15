@@ -44,6 +44,13 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+SECRET_KEY='+*llpx7dy39^363wf8wu(oe-5lcwwi4)&fyp3_3o%2i$skiy@-'
+DEBUG=True
+ALLOWED_HOSTS=[]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -143,8 +150,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -166,3 +172,4 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
+
