@@ -1,4 +1,3 @@
-import datetime as dt 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from .forms import NewProfileForm, NewProjectForm, NewCommentForm
@@ -11,24 +10,14 @@ from rest_framework.views import APIView
 from .serializer import ProfSerializer, ProjectSerializer
 
 
-def index(request):
-    current_user = request.user
-    date = dt.date.today()
-    projects = Projects.get_projects()
-    
-    context = {
-        'current_user': current_user,
-        "date":date,
-    }
-    return render(request, "awards/index.html", context)
 
-#def home(request):
 def home(request):
     current_user = request.user
     projects = Projects.get_projects()
     title = "projects"
 
     return render(request,'awards/home.html', {"title":title, "projects":projects})
+
 
 @login_required(login_url='/accounts/login/')
 def new_post(request):
@@ -40,7 +29,7 @@ def new_post(request):
             post.profile = current_user
             post.poster_id = current_user.id
             post.save()
-        return redirect('index')
+        return redirect('home')
 
     else:
         form = NewProjectForm()

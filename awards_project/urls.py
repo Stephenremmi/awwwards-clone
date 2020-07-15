@@ -13,22 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.urls import path, include
-from django.contrib.auth import views as auth_views
-from django_registration.backends.one_step.views import RegistrationView 
+from django.contrib.auth import views as auth_views 
+from django.contrib.auth import views
 from rest_framework.authtoken.views import obtain_auth_token
+from django_registration.backends.one_step.views import RegistrationView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path(r'', include('awards.urls')),
-    path('accounts/register/',
+    url('admin/', admin.site.urls),
+    url(r'', include('awards.urls')),
+    url('accounts/register/',
         RegistrationView.as_view(success_url='/accounts/login/'),
         name='django_registration_register'),
-    path('accounts/', include('django_registration.backends.one_step.urls')),
+    url('accounts/', include('django_registration.backends.one_step.urls')),
     #url('accounts/', include('django_registration.backends.activation.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path("logout/", auth_views.LogoutView.as_view()), 
-    path(r'^tinymce/', include('tinymce.urls')),
-    path(r'^api-token-auth/', obtain_auth_token)
+    url('accounts/', include('django.contrib.auth.urls')),
+    url("logout/", auth_views.LogoutView.as_view()), 
+    url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^api-token-auth/', obtain_auth_token)
 ]
