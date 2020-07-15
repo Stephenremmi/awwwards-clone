@@ -14,21 +14,21 @@ from .serializer import ProfSerializer, ProjectSerializer
 def index(request):
     current_user = request.user
     date = dt.date.today()
-    images = Projects.get_projects()
+    projects = Projects.get_projects()
+    
     context = {
-        'all_images': images,
         'current_user': current_user,
         "date":date,
     }
     return render(request, "awards/index.html", context)
 
+#def home(request):
 def home(request):
     current_user = request.user
     projects = Projects.get_projects()
     title = "projects"
 
     return render(request,'awards/home.html', {"title":title, "projects":projects})
-
 
 @login_required(login_url='/accounts/login/')
 def new_post(request):
@@ -40,7 +40,7 @@ def new_post(request):
             post.profile = current_user
             post.poster_id = current_user.id
             post.save()
-        return redirect('home')
+        return redirect('index')
 
     else:
         form = NewProjectForm()

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'awards',
     'bootstrap3',
     'tinymce',
-    'rest_framework'
+    'rest_framework',
+    'django_registration'
 ]
 
 MIDDLEWARE = [
@@ -76,11 +77,12 @@ WSGI_APPLICATION = 'awards_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'awwwards',
+        'USER': 'remmi',
+    'PASSWORD':'stephen',
     }
 }
 
@@ -109,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
@@ -125,3 +127,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}

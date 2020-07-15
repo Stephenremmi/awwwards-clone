@@ -2,7 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r"^$", views.index, name="index"),
+    url(r"^$", views.home, name="index"),
     url(r'^new/post$', views.new_post, name='new-post'),
     url(r'^profile/$',views.profile,name = 'NewProfile'),
     url(r'^new_profile/$',views.new_profile,name = 'new_profile'),
