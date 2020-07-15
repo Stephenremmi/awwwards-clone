@@ -14,13 +14,13 @@ from .serializer import ProfSerializer, ProjectSerializer
 def index(request):
     current_user = request.user
     date = dt.date.today()
-    images = Projects.fetch_all_images()
-    image_params = {
+    images = Projects.get_projects()
+    context = {
         'all_images': images,
         'current_user': current_user,
         "date":date,
     }
-    return render(request, "awards/index.html", image_params)
+    return render(request, "awards/index.html", context)
 
 def home(request):
     current_user = request.user
