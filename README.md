@@ -17,6 +17,7 @@ User can leave a comment after reviewing a project.
 
 # Display of working demo
 [Profile](https://user-images.githubusercontent.com/61972580/87776806-07eac300-c831-11ea-8aa1-4d11244600b3.png)
+![Screenshot from 2020-07-17 13-18-04](https://user-images.githubusercontent.com/61972580/87777271-dde5d080-c831-11ea-8bfb-7f7e1d841f79.png)
 
 ## Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
