@@ -2,7 +2,7 @@
 This is an application where users can showcase their projects.
 
 ## Author
-Stephen Remmi
+[Stephen Remmi](https://github.com/Stephenremmi)
 
 
 ## Description
