@@ -15,6 +15,9 @@ User can upload pictures to the application as profile image and also project la
 User can view each others profile details.
 User can leave a comment after reviewing a project.
 
+# Display of working demo
+https://user-images.githubusercontent.com/61972580/87776806-07eac300-c831-11ea-8aa1-4d11244600b3.png
+
 ## Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
 * Once python is installed, install the folowing external libraries provided in the requirements.txt file using pip
