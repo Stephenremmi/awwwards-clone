@@ -60,5 +60,5 @@ Here is a run through of how to set up the application:
 ## Support and contact details
 For more information, questions, or help using the program, get in touch with me via email @stephenremmi@gmail.com
 
-## License
+## (License)[https://github.com/Stephenremmi/awwwards-clone/blob/master/LICENSE]
 MIT Copyright (c) 2020 Stephen Remmi
