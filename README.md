@@ -1,4 +1,4 @@
-[![codebeat badge](https://codebeat.co/badges/daf44f38-23bc-46a7-91e1-59faded338f1)](https://codebeat.co/projects/github-com-stephenremmi-articnews-master)
+[![codebeat badge](https://codebeat.co/badges/daf44f38-23bc-46a7-91e1-59faded338f1)](https://codebeat.co/projects/github-com-stephenremmi-awwwards-clone-master)
 # Awwwards
 This is an application where users can showcase their projects.
 
@@ -39,7 +39,7 @@ Here is a run through of how to set up the application:
 * **Step 2** : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
 * **Step 3** : Go to the project root directory and install the virtualenv library using pip an afterwards create a virtual environment. Run the following commands respectively:
     * **`pip install virtualenv`**
-    * **`virtualenv venv`**
+    * **`virtualenv venv`**https://codebeat.co/projects/github-com-stephenremmi-articnews-master
     * **`source venv/bin/activate`**
         * Note that you can exit the virtual environment by running the command **`deactivate`**
 * **Step 4** : Download the all dependencies in the requirements.txt using **`pip install -r requirements.txt`**
