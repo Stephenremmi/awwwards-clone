@@ -1,3 +1,5 @@
+[![codebeat badge]()()
+
 # Awwwards
 This is an application where users can showcase their projects.
 
