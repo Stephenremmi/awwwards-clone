@@ -15,12 +15,12 @@ User can upload pictures to the application as profile image and also project la
 User can view each others profile details.
 User can leave a comment after reviewing a project.
 
-# Display of working demo
+### Display of working demo
 ![Screenshot from 2020-07-17 13-18-18](https://user-images.githubusercontent.com/61972580/87777450-2c936a80-c832-11ea-9659-150d42bbe068.png)
 ![Screenshot from 2020-07-17 13-18-04](https://user-images.githubusercontent.com/61972580/87777271-dde5d080-c831-11ea-8bfb-7f7e1d841f79.png)
 ![Screenshot from 2020-07-17 13-17-30](https://user-images.githubusercontent.com/61972580/87777573-68c6cb00-c832-11ea-8607-19dea3cc2611.png)
 
-## Requirements
+### Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
 * Once python is installed, install the folowing external libraries provided in the requirements.txt file using pip
 * Example: rs are also able to view each others profile details and even search for specific projects.
@@ -31,7 +31,7 @@ User can leave a comment after reviewing a project.
         * **`SECRET=<your secret key here>`**
     * More info onhow to use the Django pyuploadcare library can be found [here](https://uploadcare.com/docs/guides/django/)
 
-## Installation and Set-up
+### Installation and Set-up
 To view the app, open the live site link provided below on the README.
 Here is a run through of how to set up the application:
 * **Step 1** : Clone this repository using **`git clone https://github.com/Stephenremmi/awwwards-clone.git`**, or downloading a ZIP file of the code.
@@ -46,13 +46,13 @@ Here is a run through of how to set up the application:
     * To post photos, run the command  **`python manage.py createsuperuser`** to create an admin account in order to post. Access to the admin panel is by adding the path /admin to the address bar.
 
 
-# Known Bugs
+### Known Bugs
 * Search functionality is buggy, fix coming soon
 
-# Versioning
+## Versioning
 * Version 2 is set to include a vote and like functionality for rating the projects
 
-## Technologies Used
+### Technologies Used
 * Python 3.6.9
 * Bootstrap3
 * Heroku
